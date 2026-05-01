@@ -1,0 +1,72 @@
+{
+  "name": "个人影视总仓",
+  "author": "个人学习使用",
+  "version": "2026.05.01",
+  "url": "【这里填你这个box.json托管后的原始直链地址】",
+  "desc": "2026年最新规范，仅用于技术学习",
+  "spider": [
+    {
+      "name": "电影天堂dyttzy",
+      "type": 0,
+      "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/json/",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 15000,
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        "Referer": "http://caiji.dyttzyapi.com/"
+      },
+      "ext": {
+        "cate": {
+          "电影": "1",
+          "电视剧": "2"
+        },
+        "playUrl": "play",
+        "img": "vod_pic",
+        "id": "vod_id",
+        "name": "vod_name",
+        "year": "vod_year",
+        "area": "vod_area",
+        "actor": "vod_actor",
+        "director": "vod_director",
+        "des": "vod_content",
+        "lang": "vod_lang",
+        "note": "vod_remarks"
+      }
+    },
+    {
+      "name": "非凡资源ffzy",
+      "type": 0,
+      "api": "shturl.cc/QWfSaoBnxYqOougp15RUfkoeJq65Uy76ajMTY8gkbcWG2SQ0ou1ls",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "timeout": 15000,
+      "header": {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36",
+        "Referer": "https://ffzy5.tv/"
+      },
+      "ext": {
+        "cate": {
+          "电影": "1",
+          "国产剧": "12"
+        },
+        "playUrl": "play",
+        "img": "vod_pic",
+        "id": "vod_id",
+        "name": "vod_name",
+        "year": "vod_year",
+        "area": "vod_area",
+        "actor": "vod_actor",
+        "director": "vod_director",
+        "des": "vod_content",
+        "lang": "vod_lang",
+        "note": "vod_remarks"
+      }
+    }
+  ],
+  "ads": [".*ad.*", ".*advertising.*", ".*popup.*", ".*ads.*"],
+  "csp": ["*"],
+  "timeout": 15000
+}
